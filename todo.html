@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+           
+        }
+        body{
+            background-image:url("pexels-akos-szabo-145938-440731.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position:center;
+            justify-content: center;
+            align-items: center;
+            min-height:100vh;
+
+        }
+        .container{
+            align-items: center;
+            justify-content: center;
+            height:100%;
+            width:100%;
+            padding:0 20px;
+
+        }
+        .todo-app{
+            width: 350px;
+            height: 350px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            box-shadow:0 0 100px black;
+            border:1px solid  rgb(94, 15, 53);
+            margin-top:150px;
+            margin-left: 450px;
+            padding: 20px;
+             backdrop-filter:blur(10px);
+
+           
+           
+        }
+        h1{
+            text-align: center;
+            font-size:28px;
+            color: rgb(94, 15, 53);
+        }
+        .input{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        #inptask{
+            padding: 10px;
+            font-size: 15px;
+            border-radius:22px;
+            border-color: brown;
+            width:260px;
+        }
+        #addTask{
+            padding:7px;
+            border:2px solid black;
+            border-radius:10px;
+            background-color:rgb(204, 27, 74);
+            color:antiquewhite;
+            font-size:19px;
+            cursor: pointer;
+        
+        }
+        #addTask:hover{
+            background-color: rgb(32, 113, 32);
+        }
+        .todolist-container{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        #task-list{
+            width:100%;
+            
+            
+        }
+        #cmplttsk{
+            border:none;
+            background-color:rgb(27, 199, 27);
+            border-radius:12px;
+            color:black;
+            height:30px;
+            width:180px;
+            border:2px solid rgb(121, 32, 55);
+            margin-left:20px;
+        }
+         #cmplttsk:hover{
+            background-color:rgb(199, 202, 23);
+            
+         }
+        
+        
+
+            
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h1>To-Do App</h1><br>
+             <input type="text" name="" id="inptask"placeholder="Add a new task">
+                <button id="addTask"onclick="addTodo()">+</button><br><br>
+                  <button id="cmplttsk"onclick="allTaskcompleatd()">Tasks Compleated</button>
+                <div class="todolist-container">
+                  
+                <ul id="task-list">
+                 
+              </ul>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="To-Do list app.js"></script>
+    </body>
+    </html>
