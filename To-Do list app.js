@@ -31,7 +31,7 @@
            
         
        });
-       alert("All tasks are compleated!");
+      
     }else{
       alert("All tasks are not compleated yet!");
     }
